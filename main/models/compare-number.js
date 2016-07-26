@@ -1,8 +1,4 @@
 class CompareNumber {
-    constructor(input, number) {
-        this.input = input;
-        this.number = number;
-    }
 
     static compareNmuber(input, number) {
         const inputs = input.split('');

@@ -1,8 +1,8 @@
 'use strict'
-const main = require('../main/main.js');
-describe('guess-number', ()=> {
+const main = require('../main/models/compare-number');
+describe('compare number', ()=> {
     const input = '1234';
-    it('judgeNumber', ()=> {
+    it('should compare number', ()=> {
         [
             {
                 number:'1234',
@@ -16,7 +16,7 @@ describe('guess-number', ()=> {
                 expectResult:'0A0B'
             }
         ].forEach(item=>{
-            expect( main.judgeNumber(input, item.number)).toEqual(item.expectResult);
+            expect( main.compareNmuber(input, item.number)).toEqual(item.expectResult);
         })
     });
 })
